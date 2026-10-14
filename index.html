@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THIRAN Dynamic Multi-Student English Workbook</title>
+  <title>THIRAN+ English Workbook</title>
   <style>
     :root {
       --primary: #4f46e5;
@@ -258,8 +258,8 @@
   <!-- WELCOME & MULTI-STUDENT LOGIN MODAL -->
   <div id="welcome-screen">
     <div class="welcome-card">
-      <h1>THIRAN English Workbook</h1>
-      <p class="sub">Fundamental Language Skills (Classes 6, 7, 8). Each student gets a personalized question set drawn from our 150-question workbook bank—log in with your <strong>Roll Number & School Name</strong> to resume!</p>
+      <h1>THIRAN+ English Workbook</h1>
+      <p class="sub">Fundamental Language Skills-English (Classes 6 to 9). Log in with your <strong>Roll Number & School Name</strong> to resume!</p>
 
       <div class="auth-tabs">
         <button type="button" class="tab-btn active" id="tab-login-btn" onclick="switchAuthTab('login')">🔄 Resume My Workbook</button>
@@ -302,6 +302,7 @@
               <option value="Class 6">Class 6</option>
               <option value="Class 7">Class 7</option>
               <option value="Class 8">Class 8</option>
+              <option value="Class 9">Class 9</option>
             </select>
           </div>
           <div class="form-group">
@@ -325,7 +326,7 @@
   <!-- STICKY TOP HEADER WITH TOP-RIGHT PROGRESS BAR -->
   <header class="top-header">
     <div class="header-left">
-      <div class="gov-badge">THIRAN 2025–2026</div>
+      <div class="gov-badge">THIRAN+ 2026–2027</div>
       <div class="student-badge" id="header-student-info">Not Logged In</div>
       <button class="btn-switch-user" onclick="logoutCurrentStudent()">🔄 Switch Student</button>
     </div>
@@ -1153,7 +1154,7 @@
       if (modDone === MODULES_DATA.length) {
         banner.style.background = '#dcfce7';
         banner.style.color = '#166534';
-        banner.innerHTML = `🎉 CONGRATULATIONS, ${p.name.toUpperCase()}! You have completed all 15 modules of your personalized THIRAN Fundamental Language Skills Workbook within ${durationStr} of active learning time, achieving ${masteryPct}% overall mastery!`;
+        banner.innerHTML = `🎉 CONGRATULATIONS, ${p.name.toUpperCase()}! You have completed all 15 modules of your personalized THIRAN Fundamental English Language Skills Workbook within ${durationStr} of active learning time, achieving ${masteryPct}% overall mastery!`;
       } else {
         banner.style.background = '#eff6ff';
         banner.style.color = '#1e40af';
